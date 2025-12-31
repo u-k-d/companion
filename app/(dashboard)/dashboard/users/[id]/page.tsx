@@ -1,14 +1,10 @@
-import React from 'react'
+import React from "react";
 
-const UserDetails = async ({params} : {params: Promise<{id: string}>}) => {
-    const {id} = await params;
-    throw Error("Funtionality Not Implemented @UsersDetails")
+const UserDetails = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params;
+  // throw Error("Funtionality Not Implemented @UsersDetails")
   console.log(id);
-  return (
-    <div>
-      Users Detail! {id}
-    </div>
-  )
-}
+  return <div>Users Detail! {id}</div>;
+};
 
-export default UserDetails
+export default UserDetails;
